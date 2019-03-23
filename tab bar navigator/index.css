@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+*{
+  box-sizing:border-box;
+}
+body{
+  font-family:Montserrat;
+  background: rgba(91, 55, 183, 1);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin:0;
+  	transition: background 0.4s linear;
+}
+h1{
+  color:#fff;
+}
+
+.tapbar-container{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background-color:#fff;
+  border-bottom-right-radius:30px;
+  border-bottom-left-radius:30px;
+  padding:30px;
+  width:450px;
+}
+
+.item{
+  background-color: #FFFFFF;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 20px;
+	margin: 0 10px;
+	transition: background 0.4s linear;
+}
+.item i{
+  font-size:1.2em;
+}
+.item p{
+ font-weight: bold;
+	overflow: hidden;
+	max-width: 0;
+}
+.item.active p{
+  max-width:200px;
+  margin-left:10px;
+  transition: max-width 0.4s linear;
+}
+.item.active.home{
+  background-color: rgba(91, 55, 183, 0.2);
+  color: rgba(91, 55, 183, 1);
+}
+
+.item.active.heart{
+  background-color: rgba(201, 55, 157, 0.2);	
+	color: rgba(201, 55, 157, 1);
+}
+
+.item.active.search{
+    background-color: rgba(230, 169, 25, 0.2);	
+	color: rgba(230, 169, 25, 1);
+}
+
+.item.active.user{
+    background-color: rgba(28, 150, 162, 0.2);	
+	color: rgba(28, 150, 162, 1);
+}
